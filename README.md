@@ -4,8 +4,6 @@ En este ejercicio, aprenderás a crear una página web replicando el diseño de 
 
 ## Instrucciones
 
-## Instrucciones
-
 1. Haz fork y clona este repositorio en tu entorno de desarrollo:
 
    ```
@@ -18,12 +16,14 @@ En este ejercicio, aprenderás a crear una página web replicando el diseño de 
 
 4. Crea el código necesario para replicar el diseño de la imagen de referencia proporcionada en la carpeta `img`. Asegúrate de que el diseño sea fiel a la imagen, incluyendo la estructura del sitio, los colores y las fuentes.
 
-5. Implementa las siguientes media queries en tu CSS para adaptar el diseño en función del tamaño de la pantalla:
+5. Implementa las siguientes media queries en tu CSS para cambiar el diseño en función del tamaño de la pantalla:
 
-   - Cuando la pantalla sea inferior a 480px, el menú del navbar debe cambiar de color.
-   - Cuando la pantalla sea menor de 768px, el menú del navbar debe convertirse en un menú desplegable u oculto.
+   - Cuando la pantalla sea menor de 480px, el menú del navbar debe convertirse en un menú desplegable u oculto.
+   - Cuando la pantalla sea mayor de 480px y menor de 768px, el menú tendrá que estar en el lateral.
 
-6. Cuando hayas completado el ejercicio, haz un commit y un push de tus cambios al repositorio.
+6. Asegúrate de que el diseño sea responsive.
+
+7. Cuando hayas completado el ejercicio, haz un commit y un push de tus cambios al repositorio.
 
 ## Imagen de Referencia
 
