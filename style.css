@@ -1,81 +1,106 @@
-body {
-    font-family: arial;
-    margin: 0;
+* {
     padding: 0;
-    background-color: #f4f4f4;
+    margin: 0;
 }
 
-.barranav {
-    background-color: white;
+.header {
     display: flex;
     justify-content: space-between;
-    padding: 5px 30px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    height: 100px;
+    padding: 18px 50px;
+    gap: 20px;
+    background-color: white;
+}
+
+.header-top {
+    background-color: #e8999f;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 3px;
+    font-size: 10px;
+    font-weight: 200;
+}
+
+.logo img {
+    width: 145px;
+}
+
+.menu nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
     align-items: center;
 }
 
-.planet {
-    color: #48b2a2;
-    font-weight: bold;
-}
-
-.skin {
-    color: #f087f2;
-    font-weight: bold;
-}
-
-.barranav .menu a {
-    color: #48b2a2;
-    margin: 0 10px;
+.menu a {
+    font-family: sans-serif;
+    color: #009d96;
     text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
 }
 
-.fondoimg {
-    background-image: url(img/sk_fondo.jpg);
-    background-size: cover; 
-    background-position: center; 
-    position: relative; 
-    height: 863px;
-    filter: brightness(0.8);
+.usuario {
+    display: flex;
+    gap: 15px;
 }
 
-.text {
-    position: absolute;
+.usuario svg {
+    width: 20px;
+    color: #009d96;
+}
+
+.masterhead {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(img/sk_fondo.jpg);
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: white;
-    bottom: 10px;
-    left: 10px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 50px;
+    gap: 25px;
 }
 
-button {
-    background-color: #f087f2;
+.masterhead h3 {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.masterhead h1 {
+    font-size: 20px;
+}
+
+.btnMaster {
+    background-color: #e8999f;
+    border: 1px transparent solid;
+    font-size: 13px;
+    text-transform: uppercase;
     color: white;
+    letter-spacing: 4px;
+    padding: 15px 25px;
 }
 
-@media all and (max-width: 480px) {
-    .barranav {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 50px;
-        right: 10px;
-        background-color: #333;
-        width: 150px;
-        border-radius: 5px;
-    }
+.btnMaster:hover {
+    color:#e8999f;
+    background-color: transparent;
+    border: 1px #e8999f solid;
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
-    .barranav {
-        flex-direction: column;
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100px;
-        width: 200px;
-        background-color: #333;
-        padding-top: 20px;
-        gap: 10px;
-    }
+.flotante {
+    background-color: #e8999f;
+    border-radius: 120px;
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
 }
